@@ -6,7 +6,7 @@ const Auth = () => {
     return(
         <div>
             <h1>Click on the checkbox to get authenticated</h1>
-            {isChecked ? <p>You are now authenticated, you can proceed</p> : <p>you are not authenticated</p>}<br />
+            {isChecked ? <p className="authText">You are now authenticated, you can proceed</p> : <p>you are not authenticated</p>}<br />
             <input type="checkbox" onChange={() => setIsChecked(!isChecked)} />I'm not a robot
         </div>
     )
